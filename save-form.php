@@ -71,9 +71,9 @@
          
          $file = fopen("data.txt", "a") or die("can not open file");
          $content = $fn. " ". $ln. PHP_EOL. $address. PHP_EOL. $city. " ". $province. PHP_EOL. $phone. PHP_EOL. $email. PHP_EOL. PHP_EOL;
-         // $content = "\r\n" $fn ."\r\n " .$ln ."\r\n " .$address ."\r\n " .$city ."\r\n ". $province."\r\n " .$pc ."\r\n " .$phone ."\r\n " .$email ."\r\n " .$message;
+    
          fwrite($file, $content);
-         //fwrite($file, $ln);
+       
          fclose($file);
          
         
@@ -93,23 +93,6 @@
      ?>
 
 
-<!-- <div class="container">
-    <h1>Thank You</h1>
-    <h2>Here is the information you have submitted:</h2>
-    <div class="info">
-    <ol>
-        <li><em>First Name:</em> <?php echo $_POST["first_name"]?></li>
-        <li><em>Last Name:</em> <?php echo $_POST["last_name"]?></li>
-        <li><em>Address:</em> <?php echo $_POST["address"]?></li>
-        <li><em>City:</em> <?php echo $_POST["city"]?></li>
-        <li><em>Province:</em> <?php echo $_POST["province"]?></li>
-        <li><em>Postal Code:</em> <?php echo $_POST["postal_code"]?></li>
-        <li><em>Phone:</em> <?php echo $_POST["phone"]?></li>
-        <li><em>Email:</em> <?php echo $_POST["email"]?></li>
-        <li><em>Message:</em> <?php echo $_POST["message"]?></li>
-    </ol>
-    </div>
-    <a href="index.php">Go HomePage</a>
-    </div> -->
+
 </body>
 </html>
